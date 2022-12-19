@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script type="module" src="peer_refactor.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <p>local username: </p>
+    <input id="localUsername" type="text" placeholder="enter username"/><br>
+    <button id="usernameBtn">make yourself available</button><br><br><br><br>
+    <h1>These are the available users</h1>
+    <ul id="userList" style="border: 2px black solid"></ul>
+    <div class="flexChild" id="camera-container">
+        <div class="camera-box">
+            <h2>Received Stream</h2>
+            <video id="received_video" autoplay></video><br><br>
+            <h2>Local Stream</h2>
+            <video id="local_video" autoplay muted></video>
+            <button id="hangup-button" onclick="hangUpCall();" disabled> Hang Up</button>
+        </div>
+    </div>
+</body>
+</html>
