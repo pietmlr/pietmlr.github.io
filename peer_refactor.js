@@ -12,7 +12,7 @@ function makeid(length) {
 var localUsername = null;
 var targetUsername = null;
 
-var host = 'ws://81.169.235.122:9090';
+var host = 'wss://81.169.235.122:9090';
 
 // getUserMedia() is only available in a 'file:///' or tls secured url, so 'https://'
 const mediaConstraints = {
